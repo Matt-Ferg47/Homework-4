@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+    height: 450px;
+    border: 1px solid black;
+}
+
+body:hover {
+    animation: corners 2s 1 running forwards;
+}
+
+@keyframes corners {
+    from {border-radius: 0px; height: 450px;}
+    to {border-radius: 15px; height: 475px;}
+}
+
+body:hover .odd {
+    transition-duration: 2s;
+    transform: translate(375px) rotate(-1080deg) scale(.75,.75);
+}
+
+body:hover .even {
+    transition-duration: 2s;
+    transform: translate(-345px) rotate(1080deg) scale(2,2);
+}
+
+body div {
+    display: block;
+    font-size: 18px;
+    height: 32px;
+    padding-top: 14px;
+    width: 46px;
+    margin: 3px;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.odd {
+    background-color: skyblue;
+}
+
+.even {
+    background-color: coral;
+}
