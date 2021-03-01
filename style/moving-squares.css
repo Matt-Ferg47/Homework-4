@@ -2,12 +2,18 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+div.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 800px;
     height: 450px;
     border: 1px solid black;
 }
 
-body:hover {
+div.container:hover {
     animation: corners 2s 1 running forwards;
 }
 
@@ -16,17 +22,17 @@ body:hover {
     to {border-radius: 15px; height: 475px;}
 }
 
-body:hover .odd {
+div.container:hover .odd {
     transition-duration: 2s;
     transform: translate(376.25px) rotate(-1080deg) scale(.75,.75);
 }
 
-body:hover .even {
+div.container:hover .even {
     transition-duration: 2s;
     transform: translate(-345px) rotate(1080deg) scale(2,2);
 }
 
-body div {
+div.container div {
     display: block;
     font-size: 18px;
     height: 32px;
