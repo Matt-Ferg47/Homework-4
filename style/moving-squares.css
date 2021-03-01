@@ -18,7 +18,7 @@ body:hover {
 
 body:hover .odd {
     transition-duration: 2s;
-    transform: translate(375px) rotate(-1080deg) scale(.75,.75);
+    transform: translate(376.25px) rotate(-1080deg) scale(.75,.75);
 }
 
 body:hover .even {
